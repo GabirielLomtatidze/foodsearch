@@ -1,0 +1,15 @@
+@use './components/_header';
+@use './components/_card';
+@use './pages/details';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+*::selection{
+    background-color: brown;
+}
