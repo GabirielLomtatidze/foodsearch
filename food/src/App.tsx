@@ -1,30 +1,17 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { SignedIn, SignedOut, } from '@clerk/clerk-react';
-import MainPage from './pages/MainPage';
-import Header from './components/Header';
-import Details from './pages/Details';
-import Sign_in from './EnterPages/Sign_in';
+import { useUser } from "@clerk/clerk-react";
+import Islogin from "./UserPosition/Islogin";
+import NotLogIn from "./UserPosition/NotLogIn";
+
+// johac19423@nomrista.coma
 
 function App() {
+
+  const { isSignedIn } = useUser();
+
   return (
-    <BrowserRouter>
-      <Header />
-
-      <body style={{ backgroundColor: "#2C3E50" }}>
-        <SignedOut>
-          <Routes>
-            <Route path='/sign-in' element={<Sign_in/>} />
-          </Routes>
-        </SignedOut>
-        <SignedIn>
-          <Routes>
-            <Route path="/main" element={<MainPage />} />
-            <Route path="/details/:id" element={<Details />} />
-          </Routes>
-        </SignedIn>
-      </body>
-
-    </BrowserRouter>
+    <>
+      {isSignedIn ? <Islogin /> : <NotLogIn />}
+    </>
   );
 }
 
