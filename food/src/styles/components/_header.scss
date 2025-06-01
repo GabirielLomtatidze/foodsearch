@@ -36,8 +36,26 @@
             transition: color 0.3s ease;
 
             &:hover {
-                color: #F39C12;
+                color: rgba(39, 126, 214, 0.638);
             }
         }
+
+        .logout_button{
+            width: 80px;
+            height: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+
+        .logout_button{
+            color: red;
+        }
+
+        .logout_button:hover{
+            color: lightcoral;
+        }
+
     }
 }
+

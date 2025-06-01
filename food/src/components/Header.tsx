@@ -23,7 +23,7 @@ export default function Header() {
                             <>
                                 <a href="/items"><li>Items</li></a>
                                 <a href="/profile"><li >Profile</li></a>
-                                <button onClick={() => signOut()}>Log Out</button>
+                                <a href="#"><li onClick={() => signOut()} className='logout_button'>Log Out</li></a>
                             </>
                             :
                             <>

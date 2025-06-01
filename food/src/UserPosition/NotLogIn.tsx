@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '../components/Header';
-import Sign_in from '../EnterPages/Sign_in';
-import Sign_up from '../EnterPages/Sign_up';
+import Welcome from '../EnterPages/Welcome';
+
 
 
 
@@ -12,8 +12,8 @@ export default function NotLogIn() {
             <Header />
             <body style={{ backgroundColor: "#2C3E50" }}>
                 <Routes>
-                    <Route path='/' element={<Sign_in />} />
-                    <Route path='/sign-up' element={<Sign_up />} />
+                    <Route path='/' element={<Welcome/>}/>
+        
                 </Routes>
             </body>
 
