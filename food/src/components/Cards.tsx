@@ -43,7 +43,7 @@ export default function Cards() {
 
             <StarRating />
 
-            <button key={meal.idMeal} onClick={() => handleMeal(meal)}>add Wishlyst</button>
+            <button key={meal.idMeal} onClick={() => handleMeal(meal)} className="wishlyst_button">add Wishlyst</button>
           </div>
         ))}
       </div>

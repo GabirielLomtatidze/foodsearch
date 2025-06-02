@@ -67,5 +67,22 @@
         }
       }
     }
+
+    .wishlyst_button{
+      margin-top: 7px;
+      background-color: #3D4C61;
+      border: solid 1px #F39C12;
+      padding: 7px;
+      border-radius: 30px;
+      color: #ECF0F1;
+      transition: 0.4s;
+      font-weight: bold;
+    }
+
+    .wishlyst_button:hover{
+      background-color: #F39C12;
+      color: #2C3E50;
+      cursor: pointer;
+    }
   }
 }

@@ -21,6 +21,7 @@ export default function Header() {
                         <li><a href="/Contact">Contact</a></li>
                         {isSignedIn ?
                             <>
+                                <a href="/AddRecipe"><li>Add Recipe</li></a>
                                 <a href="/items"><li>Items</li></a>
                                 <a href="/profile"><li >Profile</li></a>
                                 <a href="#"><li onClick={() => signOut()} className='logout_button'>Log Out</li></a>
